@@ -78,11 +78,15 @@ public class Domain extends Host {
                 case '%':
                 case '/':
                 case ':':
+                case '<':
+                case '>':
                 case '?':
                 case '@':
                 case '[':
                 case '\\':
                 case ']':
+                case '^':
+                case '|':
                     String message = "Illegal character in domain";
                     if (codePoint == ' ') {
                         message += ": space is not allowed";
