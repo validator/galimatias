@@ -483,7 +483,7 @@ final class URLParser {
                             port = (base == null || base.port() == base.defaultPort())? -1 : base.port();
                         }
                         state = ParseURLState.RELATIVE_PATH;
-                        idx--;
+                        decrIdx();
                     }
                     break;
                 }
